@@ -16,12 +16,12 @@ public class AddAtPositionCircular {
 
     public void addLast(int val) {
         addFirst(val);
-        tail = tail.next; // new node becomes tail
+        tail = tail.next;
     }
 
     public void addAtPosition(int pos, int val) {
         if (pos <= 0 || tail == null) { addFirst(val); return; }
-        Node cur = tail.next; // head
+        Node cur = tail.next;
         int idx = 0;
         while (idx < pos - 1 && cur != tail) {
             cur = cur.next;

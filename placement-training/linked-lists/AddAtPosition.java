@@ -52,7 +52,7 @@ public class AddAtPosition {
         ll.addLast(4);
         System.out.print("Before insert: ");
         ll.printList();
-        ll.addAtPosition(2, 3); // insert 3 at index 2 (0-based)
+        ll.addAtPosition(2, 3);
         System.out.print("After insert at pos 2: ");
         ll.printList();
         ll.addAtPosition(0, 0);

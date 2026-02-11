@@ -1,5 +1,4 @@
 public class MaxSubarray {
-    // Kadane's Algorithm
     public static int maxSubarraySum(int[] arr) {
         int maxSoFar = arr[0], maxEndingHere = arr[0];
         for (int i = 1; i < arr.length; i++) {

@@ -19,11 +19,10 @@ public class SortEvenIndex {
         
         for (int i = 0; i < evenCount - 1; i++) {
             for (int j = 0; j < evenCount - i - 1; j++) {
-                int index1 = j * 2;  // Even index
-                int index2 = (j + 1) * 2;  // Next even index
+                int index1 = j * 2;
+                int index2 = (j + 1) * 2;
                 
                 if (index2 < n && arr[index1] > arr[index2]) {
-                    // Swap elements at even indices
                     int temp = arr[index1];
                     arr[index1] = arr[index2];
                     arr[index2] = temp;

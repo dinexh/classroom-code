@@ -5,7 +5,7 @@ public class SimpleCircularLinkedList {
         Node(int d) { data = d; }
     }
 
-    private Node tail; // tail.next is head
+    private Node tail;
 
     public void addLast(int val) {
         Node n = new Node(val);

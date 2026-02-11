@@ -29,7 +29,7 @@ public class DeleteNodeCircular {
             cur = cur.next;
             idx++;
         }
-        if (cur.next == head) return; // position out of range
+        if (cur.next == head) return;
         if (cur.next == tail) {
             cur.next = tail.next;
             tail = cur;
@@ -41,7 +41,6 @@ public class DeleteNodeCircular {
     public void deleteByValue(int val) {
         if (tail == null) return;
         Node head = tail.next;
-        // remove matching head nodes
         while (head != null && head.data == val) {
             if (head == tail) { tail = null; return; }
             tail.next = head.next;
