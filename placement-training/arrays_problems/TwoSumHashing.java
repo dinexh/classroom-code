@@ -2,18 +2,18 @@ import java.util.*;
 
 public class TwoSumHashing {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int T = sc.nextInt();
+        Scanner input = new Scanner(System.in);
+        int T = input.nextInt();
 
         while (T-- > 0) {
-            int N = sc.nextInt();
+            int N = input.nextInt();
             int[] arr = new int[N];
 
             for (int i = 0; i < N; i++) {
-                arr[i] = sc.nextInt();
+                arr[i] = input.nextInt();
             }
 
-            int S = sc.nextInt();
+            int S = input.nextInt();
             HashSet<Integer> seen = new HashSet<>();
             boolean found = false;
 
@@ -31,6 +31,6 @@ public class TwoSumHashing {
                 System.out.println("No Match");
             }
         }
-        sc.close();
+        input.close();
     }
 }

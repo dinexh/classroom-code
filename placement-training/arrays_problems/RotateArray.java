@@ -1,13 +1,13 @@
 import java.util.*;
 class RotateArray {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
+        Scanner input = new Scanner(System.in);
+        int t = input.nextInt();
         while (t-- > 0) {
-            int n = sc.nextInt();
-            int k = sc.nextInt();
+            int n = input.nextInt();
+            int k = input.nextInt();
             int[] a = new int[n];
-            for (int i = 0; i < n; i++) a[i] = sc.nextInt();
+            for (int i = 0; i < n; i++) a[i] = input.nextInt();
 
             k = k % n;
             int[] res = new int[n];
